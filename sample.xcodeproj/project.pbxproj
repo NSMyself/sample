@@ -13,6 +13,13 @@
 		59C0D9B31FD84E4000127F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C0D9B11FD84E4000127F9A /* Main.storyboard */; };
 		59C0D9B51FD84E4000127F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59C0D9B41FD84E4000127F9A /* Assets.xcassets */; };
 		59C0D9B81FD84E4000127F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C0D9B61FD84E4000127F9A /* LaunchScreen.storyboard */; };
+		59C0D9C01FD84F3100127F9A /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0D9BF1FD84F3000127F9A /* ViewControllerViewModel.swift */; };
+		59C0D9C21FD84F7400127F9A /* ViewController+JTAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0D9C11FD84F7400127F9A /* ViewController+JTAppleCalendar.swift */; };
+		59C0D9C41FD8502D00127F9A /* CalendarCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0D9C31FD8502D00127F9A /* CalendarCellView.swift */; };
+		59C0D9C61FD850B100127F9A /* NSObject+Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0D9C51FD850B100127F9A /* NSObject+Reflection.swift */; };
+		59C0D9CD1FD8516B00127F9A /* Calendar+SameDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0D9CC1FD8516B00127F9A /* Calendar+SameDay.swift */; };
+		59C0D9D01FD851A100127F9A /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0D9CF1FD851A100127F9A /* Design.swift */; };
+		59C0D9D21FD8520D00127F9A /* Date+FirstLastDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0D9D11FD8520D00127F9A /* Date+FirstLastDays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		59C0D9B41FD84E4000127F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59C0D9B71FD84E4000127F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59C0D9B91FD84E4000127F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59C0D9BF1FD84F3000127F9A /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		59C0D9C11FD84F7400127F9A /* ViewController+JTAppleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+JTAppleCalendar.swift"; sourceTree = "<group>"; };
+		59C0D9C31FD8502D00127F9A /* CalendarCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCellView.swift; sourceTree = "<group>"; };
+		59C0D9C51FD850B100127F9A /* NSObject+Reflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Reflection.swift"; sourceTree = "<group>"; };
+		59C0D9CC1FD8516B00127F9A /* Calendar+SameDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+SameDay.swift"; sourceTree = "<group>"; };
+		59C0D9CF1FD851A100127F9A /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		59C0D9D11FD8520D00127F9A /* Date+FirstLastDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FirstLastDays.swift"; sourceTree = "<group>"; };
 		77624E42D765E09AB09B8E5B /* Pods_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C925A90C9B6422F52F9BBF /* Pods-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sample/Pods-sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,13 +76,68 @@
 			isa = PBXGroup;
 			children = (
 				59C0D9AD1FD84E4000127F9A /* AppDelegate.swift */,
-				59C0D9AF1FD84E4000127F9A /* ViewController.swift */,
-				59C0D9B11FD84E4000127F9A /* Main.storyboard */,
-				59C0D9B41FD84E4000127F9A /* Assets.xcassets */,
-				59C0D9B61FD84E4000127F9A /* LaunchScreen.storyboard */,
-				59C0D9B91FD84E4000127F9A /* Info.plist */,
+				59C0D9CA1FD850E800127F9A /* ViewController */,
+				59C0D9C71FD850B700127F9A /* Extensions */,
+				59C0D9C81FD850C700127F9A /* Views */,
+				59C0D9CE1FD8519100127F9A /* Assets */,
+				59C0D9C91FD850D100127F9A /* Supporting Files */,
 			);
 			path = sample;
+			sourceTree = "<group>";
+		};
+		59C0D9C71FD850B700127F9A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				59C0D9C51FD850B100127F9A /* NSObject+Reflection.swift */,
+				59C0D9CC1FD8516B00127F9A /* Calendar+SameDay.swift */,
+				59C0D9D11FD8520D00127F9A /* Date+FirstLastDays.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		59C0D9C81FD850C700127F9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59C0D9C31FD8502D00127F9A /* CalendarCellView.swift */,
+				59C0D9B11FD84E4000127F9A /* Main.storyboard */,
+				59C0D9B61FD84E4000127F9A /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59C0D9C91FD850D100127F9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59C0D9B91FD84E4000127F9A /* Info.plist */,
+				59C0D9CF1FD851A100127F9A /* Design.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59C0D9CA1FD850E800127F9A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				59C0D9AF1FD84E4000127F9A /* ViewController.swift */,
+				59C0D9C11FD84F7400127F9A /* ViewController+JTAppleCalendar.swift */,
+				59C0D9CB1FD850F800127F9A /* ViewModel */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		59C0D9CB1FD850F800127F9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				59C0D9BF1FD84F3000127F9A /* ViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		59C0D9CE1FD8519100127F9A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				59C0D9B41FD84E4000127F9A /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		77F1C3E26D95238740FD5DAC /* Pods */ = {
@@ -217,8 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C0D9D21FD8520D00127F9A /* Date+FirstLastDays.swift in Sources */,
+				59C0D9CD1FD8516B00127F9A /* Calendar+SameDay.swift in Sources */,
+				59C0D9D01FD851A100127F9A /* Design.swift in Sources */,
+				59C0D9C61FD850B100127F9A /* NSObject+Reflection.swift in Sources */,
 				59C0D9B01FD84E4000127F9A /* ViewController.swift in Sources */,
+				59C0D9C41FD8502D00127F9A /* CalendarCellView.swift in Sources */,
+				59C0D9C01FD84F3100127F9A /* ViewControllerViewModel.swift in Sources */,
 				59C0D9AE1FD84E4000127F9A /* AppDelegate.swift in Sources */,
+				59C0D9C21FD84F7400127F9A /* ViewController+JTAppleCalendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6QXSY3FS;
-				INFOPLIST_FILE = sample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/sample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nsmyself.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6QXSY3FS;
-				INFOPLIST_FILE = sample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/sample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nsmyself.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
